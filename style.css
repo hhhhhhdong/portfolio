@@ -55,6 +55,13 @@ a {
   color: white;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -100,6 +107,7 @@ p {
   margin: 4px 0;
 }
 
+/* Navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -131,4 +139,33 @@ p {
 
 .navbar__menu__item:hover {
   background-color: #ff6863;
+}
+
+/* Home */
+#home {
+  background: url(imgs//home-background.png) no-repeat center/cover;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+}
+
+.home__title,
+.home__description {
+  color: white;
+}
+
+.home__btn {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
 }
