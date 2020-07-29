@@ -12,7 +12,6 @@ document.addEventListener("scroll", () => {
 });
 
 // navbar 메뉴 눌렀을 때 화면 스크롤링
-
 const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener("click", (e) => {
   const target = e.target;
@@ -20,8 +19,16 @@ navbarMenu.addEventListener("click", (e) => {
   if (link == null) {
     return;
   }
-  console.log(e.target.dataset.link);
-
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollIntoView(link);
 });
+
+// contact me! 버튼을 눌렀을 때
+const contactMe = document.querySelector(".home__btn");
+contactMe.addEventListener("click", () => {
+  scrollIntoView("#contact");
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
