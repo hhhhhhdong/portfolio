@@ -10,3 +10,18 @@ document.addEventListener("scroll", () => {
     navbar.classList.remove("navbar--blue");
   }
 });
+
+// navbar 메뉴 눌렀을 때 화면 스크롤링
+
+const navbarMenu = document.querySelector(".navbar__menu");
+navbarMenu.addEventListener("click", (e) => {
+  const target = e.target;
+  const link = target.dataset.link;
+  if (link == null) {
+    return;
+  }
+  console.log(e.target.dataset.link);
+
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+});
