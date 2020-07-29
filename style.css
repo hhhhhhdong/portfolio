@@ -119,14 +119,23 @@ p {
   margin: auto;
 }
 
+/* 330066  522d80  7851a9  ae87d0 c9a0dc */
+/* 26648e  4f8fc0  53d2dc  ffe3b3 */
 /* Navbar */
 #navbar {
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  background-color: pink;
+  background-color: transparent;
   align-items: center;
   color: white;
   padding: 0 16px;
+  transition: all 300ms ease-in-out;
+}
+
+#navbar.navbar--blue {
+  background-color: #26648e;
 }
 
 .navbar__logo {
@@ -150,13 +159,23 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: #ff6863;
+  background-color: #4f8fc0;
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  right: 32px;
+  top: 8px;
+  font-size: 24px;
+  color: white;
+  display: none;
 }
 
 /* Home */
 #home {
   background: url(imgs//home-background.png) no-repeat center/cover;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -194,10 +213,11 @@ p {
   height: 170px;
   font-size: 70px;
   line-height: 170px;
-  border: 1px solid #73aace;
+  border: 1px solid #4f8fc0;
   border-radius: 50%;
-  color: #73aace;
+  color: #4f8fc0;
   margin-bottom: 16px;
+  margin: auto;
 }
 
 .major__title,
@@ -210,12 +230,12 @@ p {
 }
 
 .major__icon:hover i {
-  color: pink;
+  color: #53d2dc;
   transform: rotate(-30deg) scale(1.1);
 }
 
 .major__icon:hover {
-  border: 1px solid pink;
+  border: 1px solid #53d2dc;
 }
 
 .major__icon i {
@@ -250,7 +270,7 @@ p {
 
 /* Skills */
 #skills {
-  background-color: #fff7d1;
+  background-color: #ffe3b3;
 }
 
 .skillset {
@@ -280,12 +300,15 @@ p {
 
 .skill__value {
   height: 3px;
-  background-color: #feb546;
+  background-color: #bf6517;
 }
 
 /* Work */
 .work__categories {
   margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .category__btn {
@@ -297,7 +320,7 @@ p {
 
 .category__btn.active,
 .category__btn:hover {
-  background-color: pink;
+  background-color: #4f8fc0;
   color: white;
 }
 
@@ -370,8 +393,9 @@ p {
   margin-top: 8px;
 }
 
+/* Contact */
 #contact {
-  background-color: pink;
+  background-color: #26648e;
 }
 
 .contact__title,
@@ -397,4 +421,45 @@ p {
 
 .contact__rights {
   font-size: 14px;
+}
+
+/* For below  */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .job {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+  }
+
+  .job__description {
+    margin-left: 10px;
+  }
+
+  .category__btn {
+    width: 100%;
+  }
 }
