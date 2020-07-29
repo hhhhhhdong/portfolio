@@ -28,6 +28,13 @@ contactMe.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
+// home 부분 스크롤링되면서 점점 투명해지게
+const home = document.querySelector(".home__container");
+const homeHieght = home.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHieght;
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });
