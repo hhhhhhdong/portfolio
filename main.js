@@ -58,6 +58,12 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
+  // 클릭된 버튼에 색상주고 이전 버튼 색상 없애기
+  const activeBtn = document.querySelector(".category__btn.selected");
+  activeBtn.classList.remove("selected");
+  const newActiveBtn =
+    e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  newActiveBtn.classList.add("selected");
 
   projectContainer.classList.add("anim-out");
   setTimeout(() => {
