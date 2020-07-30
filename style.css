@@ -162,7 +162,7 @@ p {
 .navbar__toggle-btn {
   position: absolute;
   right: 32px;
-  top: 8px;
+  top: 10px;
   font-size: 24px;
   color: white;
   display: none;
@@ -386,18 +386,18 @@ p {
 }
 
 .project__description h3 {
-  color: white;
+  color: orange;
 }
 
 .project__description h3:after {
   content: "";
-  width: 25px;
+  width: 70px;
   height: 2px;
   background-color: #bdbdbd;
   display: block;
   position: relative;
   left: 50%;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
 }
 
@@ -463,6 +463,8 @@ p {
   #navbar {
     flex-direction: column;
     align-items: start;
+    padding: 5px 16px;
+    background-color: #26648e;
   }
 
   .navbar__menu {
@@ -470,6 +472,10 @@ p {
     width: 100%;
     text-align: center;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {

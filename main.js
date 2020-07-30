@@ -20,6 +20,13 @@ navbarMenu.addEventListener("click", (e) => {
     return;
   }
   scrollIntoView(link);
+  navbarMenu.classList.remove("open");
+});
+
+// 토클버튼 토클
+const toggleBtn = document.querySelector(".navbar__toggle-btn");
+toggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 // contact me! 버튼을 눌렀을 때
