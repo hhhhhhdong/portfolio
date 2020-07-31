@@ -199,6 +199,10 @@ p {
   color: white;
 }
 
+.home__btn:hover {
+  background-color: #4f8fc0;
+}
+
 /* About */
 .about__majors {
   display: flex;
@@ -434,16 +438,16 @@ p {
 /* Arrow up */
 .arrow-up {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
-  width: 50px;
-  height: 50px;
+  right: 16px;
+  bottom: 16px;
+  width: 40px;
+  height: 40px;
   font-size: 30px;
   background-color: #4f8fc0;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in;
@@ -456,6 +460,10 @@ p {
 
 /* For below  */
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 16px;
+  }
+
   .navbar__toggle-btn {
     display: block;
   }
@@ -480,6 +488,12 @@ p {
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .major {
+    margin-bottom: 16px;
   }
 
   .project {
