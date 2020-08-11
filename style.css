@@ -203,6 +203,12 @@ p {
   background-color: #4f8fc0;
 }
 
+.home__container .contact__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* About */
 .about__majors {
   display: flex;
@@ -276,6 +282,7 @@ p {
 }
 
 .skillset {
+  margin-top: 25px;
   background-color: #7c7979;
   color: #eeeeee;
   padding: 20px 40px;
