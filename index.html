@@ -70,24 +70,21 @@
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fab fa-js"></i>
           </div>
-          <h2 class="major__title">HTML</h2>
-          <div class="major__description">웹페이지 구조 설계</div>
+          <h2 class="major__title">JavaScript</h2>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-react"></i>
           </div>
-          <h2 class="major__title">CSS</h2>
-          <div class="major__description">웹페이지 스타일링</div>
+          <h2 class="major__title">React.js</h2>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-js-square"></i>
+            <i class="fab fa-node-js"></i>
           </div>
-          <h2 class="major__title">JAVASCRIPT</h2>
-          <div class="major__description">동적 웹페이지 구현</div>
+          <h2 class="major__title">Node.js</h2>
         </div>
       </div>
       <div class="about__jobs">
@@ -113,8 +110,9 @@
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-          프론트엔드의 가장 중요한 기술은 자바스크립트라고 생각을 해서 무엇보다
-          자바스크립트에 집중에서 공부를 하고 있습니다.
+          현재 개인 프로젝트로 Node.js를 기반으로 Express.js 와 MongoDB를
+          이용하여 서버 구축하고 React.js를 이용하여 클라이언트쪽을 개발하는
+          중입니다.
         </p>
         <div class="skillset">
           <h3 class="skillset__title">Skills</h3>
@@ -124,7 +122,7 @@
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 90%;"></div>
+              <div class="skill__value" style="width: 90%"></div>
             </div>
           </div>
           <div class="skill">
@@ -133,16 +131,34 @@
               <span>85%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 85%;"></div>
+              <div class="skill__value" style="width: 85%"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
-              <span>JAVASCRIPT</span>
+              <span>JavaScript</span>
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 90%;"></div>
+              <div class="skill__value" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>React.js</span>
+              <span>85%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Node.js</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%"></div>
             </div>
           </div>
         </div>
@@ -152,7 +168,7 @@
     <section id="work" class="section section__container">
       <h1>My work</h1>
       <h3>Projects</h3>
-      <div class="work__categories">
+      <!-- <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
           All<span class="category__count">6</span>
         </button>
@@ -163,8 +179,20 @@
         <button class="category__btn" data-filter="javascript">
           JAVASCRIPT<span class="category__count">3</span>
         </button>
-      </div>
+      </div> -->
       <div class="work__projects">
+        <a
+          href="https://github.com/hhhhhhdong/boilerPlate"
+          class="project"
+          target="blank"
+          data-type="react"
+        >
+          <img src="imgs/react.PNG" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>React, Node</h3>
+            <span>리액트, 노드 기반의 쇼핑 웹</span>
+          </div>
+        </a>
         <a
           href="https://hhhhhhdong.github.io/travelWebsite/"
           class="project"
@@ -174,30 +202,6 @@
           <img src="imgs/main.png" alt="project" class="project__img" />
           <div class="project__description">
             <h3>TRAVEL SITE (MAIN)</h3>
-            <span>Clon coding with HTML and CSS</span>
-          </div>
-        </a>
-        <a
-          href="https://hhhhhhdong.github.io/travelWebsite/member/join.html"
-          class="project"
-          target="blank"
-          data-type="html"
-        >
-          <img src="imgs/join.png" alt="project" class="project__img" />
-          <div class="project__description">
-            <h3>TRAVEL SITE (join)</h3>
-            <span>Clon coding with HTML and CSS</span>
-          </div>
-        </a>
-        <a
-          href="https://hhhhhhdong.github.io/travelWebsite/board/program.html"
-          class="project"
-          target="blank"
-          data-type="html"
-        >
-          <img src="imgs/program.png" alt="project" class="project__img" />
-          <div class="project__description">
-            <h3>TRAVEL SITE (contents)</h3>
             <span>Clon coding with HTML and CSS</span>
           </div>
         </a>
@@ -213,30 +217,6 @@
             <span>자바스크립트를 이용한 웹게임</span>
           </div>
         </a>
-        <a
-          href="https://hhhhhhdong.github.io/Projects/shoppingMall/"
-          class="project"
-          target="blank"
-          data-type="javascript"
-        >
-          <img src="imgs/shoppingmall.PNG" alt="project" class="project__img" />
-          <div class="project__description">
-            <h3>Shopping Mall</h3>
-            <span>간단한 쇼핑몰 필터링</span>
-          </div>
-        </a>
-        <a
-          href="https://hhhhhhdong.github.io/Projects/shoppingList/"
-          class="project"
-          target="blank"
-          data-type="javascript"
-        >
-          <img src="imgs/shoppinglist.png" alt="project" class="project__img" />
-          <div class="project__description">
-            <h3>Shopping List</h3>
-            <span>쇼핑리스트 메모장</span>
-          </div>
-        </a>
       </div>
     </section>
     <!-- Contact -->
@@ -248,9 +228,7 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <p class="contact__rights">
-        2020 HYUNDONG YOUK - All rights reserved
-      </p>
+      <p class="contact__rights">2020 HYUNDONG YOUK - All rights reserved</p>
     </section>
     <!-- Arrow up -->
     <bottun class="arrow-up">
